@@ -72,9 +72,24 @@ a {
   width: 85%;
 }
 
+.intro-me {
+  align-items: center;
+  display: flex;
+}
+
 .intro-text {
   font-size: calc(14px + 1vw);
   width: 70%;
+}
+
+.about-image {
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-image img {
+  width: 100%;
 }
 
 .intro-social img {
@@ -100,11 +115,6 @@ a {
   width: 65%;
 }
 
-.about-image {
-  border: 1px pink solid;
-  width: 30%;
-}
-
 /* .about-photo {
   border: 1px pink solid;
   max-height: calc(95vh - 105px - 72px);
@@ -120,7 +130,13 @@ a {
   text-align: center;
 }
 
-/* TODO: max-width */
+.project {
+  margin-bottom: 64px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100vw - 150px);
+}
+
 .project-card {
   align-items: center;
   border: 1px solid lightgrey;
@@ -129,10 +145,6 @@ a {
   cursor: pointer;
   display: flex;
   height: 340px;
-  margin-bottom: 64px;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(100vw - 150px);
 }
 
 .project-card:hover {
@@ -187,6 +199,39 @@ a {
   background-position-y: 50%;
 }
 
-/* .project-photo_editorial:hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("assets/editorial/frontdoorsimz.png");
-} */
+.project-photo_other {
+  background-image: url("assets/other/cogeye.png");
+  background-position-y: 35%;
+}
+
+.content {
+  background-image: linear-gradient(45deg, #fff1fe, #fffff1 60%, white);
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 18px;
+  transition: max-height 0.2s ease-out;
+}
+
+.content-photos {
+  padding-top: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 85%;
+}
+
+.content-photo {
+  max-height: 250px;
+  padding-bottom: 3.9%;
+  padding-right: 3.9%;
+  width: 46%;
+}
+
+.content-photo img {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.content-photo video {}
