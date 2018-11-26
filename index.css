@@ -89,6 +89,7 @@ a {
 }
 
 .about-image img {
+  border-radius: 50%;
   width: 100%;
 }
 
@@ -115,17 +116,6 @@ a {
   width: 65%;
 }
 
-/* .about-photo {
-  border: 1px pink solid;
-  max-height: calc(95vh - 105px - 72px);
-  width: 45%;
-}
-
-.about-text {
-  max-height: calc(95vh - 105px - 72px); nav = 105, section bottom = 72px
-  padding-top: 6vh;
-  width: 45%;
-} */
 .section__header {
   text-align: center;
 }
@@ -233,5 +223,3 @@ a {
   object-fit: contain;
   width: 100%;
 }
-
-.content-photo video {}

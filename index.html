@@ -16,11 +16,11 @@
       <div class="main-nav__left">
         <a href="/" class="main-nav__link">Aisha Sohail</a>
       </div>
-      <div class="main-nav__right">
+      <!-- <div class="main-nav__right">
         <a href="/about" class="main-nav__link">About</a>
         <a href="/projects" class="main-nav__link">Projects</a>
         <a href="/contact" class="main-nav__link">Contact</a>
-      </div>
+      </div> -->
     </nav>
   </header>
 
@@ -48,7 +48,7 @@
         recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
     </div>
     <div class="about-image">
-      <img src="./assets/me2.jpeg" alt="" />
+      <img src="./assets/me4.jpg" alt="" />
     </div>
   </section>
 
@@ -164,14 +164,11 @@
   </section>
   <script>
     var coll = document.getElementsByClassName("collapsible");
-    console.log(coll);
     var i;
     for (i = 0; i < coll.length; i++) {
-      console.log('hi', coll);
       coll[i].addEventListener("click", function() {
         this.classList.toggle("active");
         var content = this.nextElementSibling;
-        console.log(content)
         if (content.style.maxHeight) {
           content.style.maxHeight = null;
         } else {
