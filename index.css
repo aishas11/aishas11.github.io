@@ -50,29 +50,26 @@ a {
   width: 100%;
 }
 
-.main-nav__left {
-  width: 20%;
-}
-
 .main-nav__right {
-  text-align: right;
-  width: 80%;
+  margin-left: auto;
 }
 
 .main-nav__link {
-  padding: 0.5em 1em;
   font-weight: 700;
+}
+
+.main-nav__right>.main-nav__link:first-child {
+  padding-right: 48px;
 }
 
 .intro {
   margin: 0 auto;
   min-height: calc(75vh - 72px);
   padding-bottom: 100px;
-  width: 85%;
 }
 
 .intro-text {
-  font-size: calc(14px + 1vw);
+  font-size: 26px;
   width: 70%;
 }
 
@@ -88,11 +85,11 @@ a {
 
 .about {
   display: flex;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin: 0 auto;
   min-height: calc(75vh - 72px);
   padding-bottom: 100px;
-  width: 95%;
 }
 
 .about-image {
@@ -114,12 +111,17 @@ a {
   text-align: center;
 }
 
-.project {
-  margin-bottom: 128px;
+.projects>article {
   margin-left: auto;
   margin-right: auto;
-  max-width: calc(100vw - 150px);
+  max-width: calc(100vw - 80px);
 }
+
+.projects>article:not(:last-child) {
+  margin-bottom: 128px;
+}
+
+.project {}
 
 .project-card {
   align-items: center;
@@ -216,4 +218,26 @@ a {
   height: 100%;
   object-fit: contain;
   width: 100%;
+}
+
+@media only screen and (max-device-width: 768px) {
+  .intro {
+    min-height: unset;
+    margin-bottom: 72px;
+  }
+
+  .intro-text {
+    width: 100%;
+  }
+
+  .about {
+    display: block;
+    min-height: unset;
+    margin-bottom: 72px;
+    width: 100%;
+  }
+
+  .about-text {
+    width: 100%;
+  }
 }
