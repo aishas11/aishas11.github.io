@@ -29,10 +29,6 @@ h2 {
   font-size: calc(1em + 1vw);
 }
 
-.artist {
-  color: cadetblue;
-}
-
 .main-header {
   margin-bottom: 7vw;
   padding: 2em 0;
@@ -47,20 +43,12 @@ h2 {
   width: 100%;
 }
 
-.main-nav__right {
-  margin-left: auto;
-}
-
 .main-nav__link {
   border: none;
   color: inherit;
   font-weight: 700;
   outline: none;
   text-decoration: none;
-}
-
-.main-nav__right>.main-nav__link:first-child {
-  padding-right: 48px;
 }
 
 .intro {
@@ -108,88 +96,6 @@ h2 {
   width: 65%;
 }
 
-.section__header {
-  text-align: center;
-}
-
-.projects>article {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: calc(100vw - 80px);
-}
-
-.projects>article:not(:last-child) {
-  margin-bottom: 128px;
-}
-
-.project {}
-
-.project-card {
-  align-items: center;
-  border: 1px solid lightgrey;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  display: flex;
-  height: 500px;
-}
-
-.project-card:hover {
-  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.2);
-}
-
-.project-card_title {
-  color: white;
-  left: 50%;
-  letter-spacing: 1.4px;
-  pointer-events: none;
-  position: absolute;
-  transform: translate(-50%);
-  visibility: hidden;
-  z-index: 1;
-}
-
-.project-photo:hover+.project-card_title {
-  visibility: visible;
-}
-
-.project-photo {
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* border-radius: 12px; */
-  height: 100%;
-  width: 100%;
-}
-
-.project-photo_other {
-  background-image: url("assets/other/cogeye.png");
-  background-position-y: 35%;
-}
-
-.content {
-  background-image: linear-gradient(45deg, #fff1fe, #fffff1 60%, white);
-  /* max-height: 0; */
-  overflow: hidden;
-  /* padding: 0 18px; */
-  transition: max-height 0.2s ease-out;
-}
-
-.content-photos {
-  padding-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
-  width: 85%;
-}
-
-.content-photo {
-  max-height: 250px;
-  /* padding-bottom: 3.9%;
-  padding-right: 3.9%; */
-  width: 32%;
-}
-
 @media only screen and (max-device-width: 768px) {
   .intro {
     margin-bottom: 72px;
@@ -212,25 +118,6 @@ h2 {
   }
 }
 
-.logos {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-flow: wrap;
-}
-
-.logo {
-  padding-right: 8%;
-  padding-bottom: 3%;
-  width: 20%;
-}
-
-.logo>img {
-  /* height: 100%; */
-  object-fit: contain;
-  width: 80%;
-}
-
 .projects-grid {
   align-items: center;
   display: grid;
@@ -238,7 +125,6 @@ h2 {
   grid-gap: 2px;
   grid-auto-rows: minmax(80px, auto);
   grid-auto-flow: dense;
-  /* background: #fef3ff80; */
 }
 
 .project-header-wrapper {
@@ -292,7 +178,7 @@ div+.animated-header {
   border: 1px solid #bd93ff;
 }
 
-.project-asset img, video {
+.project-asset img {
   display: flex;
   height: 100%;
   object-fit: contain;
