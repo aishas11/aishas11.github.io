@@ -29,11 +29,8 @@ h2 {
   font-size: calc(1em + 1vw);
 }
 
-a {
-  border: none;
-  color: inherit;
-  outline: none;
-  text-decoration: none;
+.artist {
+  color: cadetblue;
 }
 
 .main-header {
@@ -55,7 +52,11 @@ a {
 }
 
 .main-nav__link {
+  border: none;
+  color: inherit;
   font-weight: 700;
+  outline: none;
+  text-decoration: none;
 }
 
 .main-nav__right>.main-nav__link:first-child {
@@ -241,10 +242,11 @@ a {
 }
 
 .project-header-wrapper {
+  margin-bottom: 32px;
   text-align: center;
 }
 
-.project-header {
+.animated-header {
   background: linear-gradient(to right, #9b8fe4 0%, #00e1ba 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -254,7 +256,7 @@ a {
   position: relative;
 }
 
-.project-header:after {
+.animated-header:after {
   content: '';
   position: absolute;
   top: 0;
@@ -282,13 +284,12 @@ a {
   }
 }
 
-div+.project-header {
+div+.animated-header {
   padding-top: 64px;
 }
 
 .project-asset {
   border: 1px solid #bd93ff;
-  /* background: yellow; */
 }
 
 .project-asset img, video {

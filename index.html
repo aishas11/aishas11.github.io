@@ -14,12 +14,12 @@
   <header class="main-header">
     <nav class="main-nav">
       <div class="main-nav__left">
-        <a href="/" class="main-nav__link">Aisha Sohail</a>
+        <a href="/" class="main-nav__link animated-header">Aisha Sohail</a>
       </div>
-      <div class="main-nav__right">
+      <!-- <div class="main-nav__right">
         <a href="#about" class="main-nav__link">Me</a>
         <a href="#projects" class="main-nav__link">Work</a>
-      </div>
+      </div> -->
     </nav>
   </header>
 
@@ -35,8 +35,8 @@
       <a href="https://www.linkedin.com/in/aishasohail/"><img src="./assets/social/linkedin.svg" alt=""></a>
       <a href="https://github.com/aishas11"><img src="./assets/social/github.svg" alt=""></a>
       <a href="https://open.spotify.com/user/aishasx11"><img src="./assets/social/spotify.svg" alt=""></a>
-      <a href="mailto:aishas110@gmail.com"><img src="./assets/social/telegram.svg" alt=""></a>
-      <a href=""><img src="./assets/social/cv.svg" alt=""></a>
+      <a href="mailto:aishas110@gmail.com"><img src="./assets/social/gmail.svg" alt=""></a>
+      <a href="./assets/resume.pdf"><img src="./assets/social/cv.svg" alt=""></a>
     </div>
   </section>
 
@@ -45,63 +45,31 @@
       <img src="./assets/me4.jpg" alt="" />
     </div>
     <div class="about-text">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
-        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
-        recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <p>I am a scientist turned UX engineer based in NYC. I started out as a neuroscience grad student, but discovered my love for web technologies while working freelance for a digital media outlet. I began my formal training as a web engineer in
+        Cambridge, developing mRNA synthesis algorithms and corresponding UIs for scientists at Moderna Therapeutics. My combined love for music and technology brought me to Spotify where I have loved working ever since. </p>
+      <p>My professional joys currently center around seamless and emotional user experiences, ReactJs application architecture, data visualization, animations, performance, and developer tooling. See some recent examples of my work below! </p>
     </div>
   </section>
-  <!-- <section class="logos">
-    <div class="logo"><img src="./assets/logos/spotify.svg" alt=""></div>
-    <div class="logo"><img src="./assets/logos/moderna.png" alt=""></div>
-    <div class="logo"><img src="./assets/logos/jacobin.svg" alt=""></div>
-    <div class="logo"><img src="./assets/logos/neurala.png" alt=""></div>
-    <div class="logo"><img src="./assets/logos/NASA.svg" style="width: 60%;" alt=""></div>
-  </section> -->
 
   <section id="projects">
     <div class="project-header-wrapper">
-      <h3 class="project-header">Recent Work</h3>
+      <h3 class="animated-header">Recent Projects</h3>
     </div>
     <div class="projects-grid">
       <div class="project-asset row-3"><img src="./assets/datavis/audience.jpg" alt=""></div>
       <div class="project-asset row-2 col-1"><img src="./assets/editorial/uploadlanding2.png" alt=""></div>
       <div class="project-asset row-4 col-1"><img src="./assets/datavis/map.png" alt=""></div>
+      <div class="project-asset row-2 col-1"><img src="./assets/datavis/songspike.jpg" alt=""></div>
+      <div class="project-asset row-5 col-3"><img src="./assets/motion/onboarding.gif" alt=""></div>
       <div class="project-asset row-2 col-1"><img src="./assets/datavis/mobile1.png" alt=""></div>
+      <div class="project-asset row-2 col-1"><img src="./assets/editorial/uploadlanding.png" alt=""></div>
       <div class="project-asset row-3 col-1"><img src="./assets/datavis/age.png" alt=""></div>
       <div class="project-asset row-3 col-3"><img src="./assets/upload/upload.png" alt=""></div>
       <div class="project-asset row-3 col-2"><img src="./assets/editorial/frontdoorflume.png" alt=""></div>
       <div class="project-asset row-3 col-1"><img src="./assets/datavis/gender.png" alt=""></div>
       <div class="project-asset row-3 col-3"><img src="./assets/motion/fetti.gif" alt=""></div>
-      <div class="project-asset row-5 col-3"><img src="./assets/motion/onboarding.gif" alt=""></div>
     </div>
-    <!-- <div class="project-header">
-      <h3>academic and freelance</h3>
-    </div>
-    <div class="projects-grid">
-      <div class="project-asset row-3 col-2"><img src="./assets/other/jacobin.png" alt=""></div>
-      <div class="project-asset row-3 col-1"><img src="./assets/other/moderna.png" alt=""></div>
-      <div class="project-asset row-5 col-3"><img src="./assets/other/modernaorder.gif" alt=""></div>
-      <div class="project-asset row-3 col-1"><img src="./assets/other/cogeye.gif" alt=""></div>
-    </div> -->
   </section>
-
-  <section id="projects" class="projects-grid">
-  </section>
-  <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
-    for (i = 0; i < coll.length; i++) {
-      coll[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var content = this.nextElementSibling;
-        if (content.style.maxHeight) {
-          content.style.maxHeight = null;
-        } else {
-          content.style.maxHeight = content.scrollHeight + "px";
-        }
-      });
-    }
-  </script>
 </body>
 
 </html>
