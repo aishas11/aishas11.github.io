@@ -65,7 +65,7 @@ h2 {
 .intro-social img {
   cursor: pointer;
   padding-right: 12px;
-  width: 20px;
+  width: 24px;
 }
 
 .intro-social img:hover {
@@ -100,6 +100,7 @@ h2 {
   .intro {
     margin-bottom: 72px;
     margin-bottom: 72px;
+    min-height: unset;
   }
 
   .intro-text {
@@ -111,6 +112,10 @@ h2 {
     min-height: unset;
     margin-bottom: 72px;
     width: 100%;
+  }
+
+  .about-image {
+    width: 50%;
   }
 
   .about-text {
